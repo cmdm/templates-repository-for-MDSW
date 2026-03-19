@@ -1,0 +1,94 @@
+site_name: IEC 62304 Templates
+site_description: Templates for medical device software development processes
+site_url: https://cmdm.github.io/IEC-62304-templates-repository/
+repo_url: https://github.com/cmdm/IEC-62304-templates-repository
+repo_name: cmdm/IEC-62304-templates-repository
+edit_uri: edit/master/docs/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - content.code.copy
+    - content.action.edit
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      base_path: docs
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/cmdm/IEC-62304-templates-repository
+
+nav:
+  - Home: index.md
+  - Development Plan:
+    - 0-development-plan/index.md
+    - Project Management Plan: 0-development-plan/project-management-plan.md
+    - Software Development Plan: 0-development-plan/software-development-plan.md
+    - Software Configuration Management Plan: 0-development-plan/software-configuration-management-plan.md
+    - Data Management Plan: 0-development-plan/data-management-plan.md
+    - Development Plan Review: 0-development-plan/development-plan-review.md
+  - Specifications:
+    - 1-specifications/index.md
+    - Software Requirements Specification: 1-specifications/software-requirements-specification.md
+    - Software Requirements Specification Review Report: 1-specifications/software-requirements-specification-review-report.md
+  - Design:
+    - 2-design/index.md
+    - Software Architecture Document: 2-design/software-architecture-document.md
+    - Software Architecture Review Report: 2-design/software-architecture-review-report.md
+    - Software Design Specification: 2-design/software-design-specification.md
+    - Software Design Specification Review Report: 2-design/software-design-specification-review-report.md
+    - Data Management Report: 2-design/data-management-report.md
+  - Coding:
+    - 3-coding/index.md
+    - Software Unit Implementation and Verification Review Report: 3-coding/software-unit-implementation-and-verification-review-report.md
+    - Pull Request Review Checklist: 3-coding/pull-request-review-checklist.md
+  - Verification:
+    - 4-verification/index.md
+    - Software Test Plan: 4-verification/software-test-plan.md
+    - Software Test Plan Review Report: 4-verification/software-test-plan-review-report.md
+    - Software Test Description: 4-verification/software-test-description.md
+    - Software Test Report: 4-verification/software-test-report.md
+  - Validation: 5-validation/index.md
+  - Release:
+    - 6-release/index.md
+    - Version Delivery Description: 6-release/version-delivery-description.md
+    - Release Review Report: 6-release/release-review-report.md
