@@ -1,4 +1,4 @@
-# Templates Repository for MEdical Device Software
+# Templates Repository for Medical Device Software
 Templates repository for medical device software development processes - IEC 62304 - IEC 82304-1 - IEC 81001-5-1 - IEC 80002-2 - ISO 14971 - IEC 62366-1
 
 See also blog.cm-dm.com
